@@ -1,15 +1,16 @@
-import { useState } from "react";
-import { Controls } from "../../components/Controls/Controls";
-import { Pizza } from "../../components/Pizza/Pizza";
+import { useState } from 'react';
 
-import styles from "./PizzaBuilder.module.css";
+import { Controls } from '@/components/Controls/Controls';
+import { Pizza } from '@/components/Pizza/Pizza';
+
+import styles from './PizzaBuilder.module.css';
 
 const PizzaBuilder = () => {
   const [ings, setIngs] = useState({
-    cheese: { name: "Сыр", price: 15, count: 0 },
-    olives: { name: "Оливки", price: 25, count: 0 },
-    sausage: { name: "Колбаса", price: 35, count: 0 },
-    mushrooms: { name: "Грибы", price: 20, count: 0 },
+    cheese: { name: 'Сыр', price: 15, count: 0 },
+    olives: { name: 'Оливки', price: 25, count: 0 },
+    sausage: { name: 'Колбаса', price: 35, count: 0 },
+    mushrooms: { name: 'Грибы', price: 20, count: 0 },
   });
 
   const [price, setPrice] = useState(100);

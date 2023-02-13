@@ -1,4 +1,4 @@
-import PizzaBuilder from "./containers/PizzaBuilder/PizzaBuilder";
+import PizzaBuilder from './containers/PizzaBuilder/PizzaBuilder';
 
 function App() {
   return <PizzaBuilder />;

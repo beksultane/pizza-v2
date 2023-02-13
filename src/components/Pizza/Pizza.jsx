@@ -1,5 +1,5 @@
-import styles from "./Pizza.module.css";
-import { Ingredient } from "./Ingredient/Ingredient";
+import { Ingredient } from './Ingredient/Ingredient';
+import styles from './Pizza.module.css';
 
 export const Pizza = ({ ings }) => {
   let ingList = [];

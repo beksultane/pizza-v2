@@ -1,4 +1,4 @@
-import styles from "./ControlItem.module.css";
+import styles from './ControlItem.module.css';
 
 export const ControlItem = ({ type, title, count, add, remove }) => {
   return (

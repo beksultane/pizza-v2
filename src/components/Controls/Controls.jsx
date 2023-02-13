@@ -1,5 +1,5 @@
-import { ControlItem } from "./ControlItem/ControlItem";
-import styles from "./Controls.module.css";
+import { ControlItem } from './ControlItem/ControlItem';
+import styles from './Controls.module.css';
 
 export const Controls = ({ ings, price, add, remove }) => {
   return (
