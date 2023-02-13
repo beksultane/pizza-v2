@@ -23,6 +23,10 @@ export const Controls = ({ ings, price, add, remove }) => {
       <div className={styles.price}>
         Общая стоимость: <span>{price}</span> сом
       </div>
+
+      <div className={styles.pizzaOrder}>
+        <button className={styles.pizzaOrderBtn}>Оформить заказ</button>
+      </div>
     </div>
   );
 };

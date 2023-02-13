@@ -43,6 +43,14 @@ const PizzaBuilder = () => {
     setPrice((price) => price - ings[type].price);
   };
 
+  const updatePurchasable = (ings) => {
+    const count = Object.values(ings).reduce((acc, item) => {
+      return acc + item.count;
+    }, 0);
+
+    return count > 0;
+  };
+
   return (
     <div className={styles.pizzaWrap}>
       <Pizza ings={ings} />
@@ -51,6 +59,7 @@ const PizzaBuilder = () => {
         price={price}
         add={addIngredient}
         remove={removeIngredient}
+        purchasable={updatePurchasable(ings)}
       />
     </div>
   );
